@@ -1,12 +1,8 @@
 package com.cellodove.glide_example
 
-import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.request.RequestOptions
-import com.bumptech.glide.signature.ObjectKey
 import com.cellodove.glide_example.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +18,5 @@ class MainActivity : AppCompatActivity() {
                 .load("https://picsum.photos/500/500")
                 .into(binding.image)
         }
-
     }
 }
